@@ -3,21 +3,126 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+.hero {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.10);
+  -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.10);
+  box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.10);
+  z-index: 1;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+.heading {
+  width: 350px;
+}
+
+.description {
+  width: 50%;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+}
+
+.primaryButton {
+  border: 1px solid var(--ifm-color-primary);
+  padding: 12px;
+}
+
+.secondaryButton {
+  padding: 12px;
+  background-color: var(--ifm-color-primary);
+  color: white;
+
+  &:hover {
+    color: white;
   }
 }
 
-.buttons {
+.featureSection {
+  padding-bottom: 64px;
+  background-color: #ffe6e6;
+
+  &:first-of-type {
+    padding-top: 64px;
+  }
+}
+
+.cardGroup {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 24px;
+}
+
+.card {
+  padding: 48px 36px 48px 36px;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  gap: 12px;
+
+  &:hover {
+    border: 1px solid red;
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.10);
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.10);
+  }
+}
+
+.cardIcon {
+  font-size: 64px;
+}
+
+.cardTitle {
+  font-size: 24px;
+}
+
+.cardDescription {
+  font-weight: 200;
+  font-size: 16px;
+  text-align: center;
+}
+
+.projectList {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.projectListItem {
+  padding: 12px;
+  border: 1px solid lightgray;
   display: flex;
   align-items: center;
-  justify-content: center;
+  background-color: white;
+  gap: 12px;
+
+  &:hover {
+    border: 1px solid red;
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.10);
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.10);
+  }
+}
+
+.projectIcon {
+  font-size: 36px;
+}
+
+.projectTitle {
+  font-size: 18px;
+}
+
+.projectDescription {
+  font-weight: 200;
+  font-size: 14px;
+  flex: 1;
+}
+
+.projectLink {
+  font-size: 14px;
 }

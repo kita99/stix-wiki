@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'STIX Wiki',
-  tagline: 'The place to learn about the Structured Threat Information Expression (STIX™) language and serialization format used to exchange cyber threat intelligence (CTI)',
+  tagline: 'STIX Wiki is a community portal that teaches about the Structured Threat Information Expression (STIX™) language and serialization format used to exchange cyber threat intelligence (CTI)',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -58,7 +58,7 @@ const config: Config = {
         },
         blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: ['./src/css/custom.css', './src/css/line-awesome.min.css'],
         },
       } satisfies Preset.Options,
     ],
@@ -89,7 +89,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'objectsSidebar',
           position: 'left',
-          label: 'STIX Objects Reference',
+          label: 'Reference',
           to: '/docs/objects',
         },
         {
@@ -105,7 +105,6 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
       links: [
         {
           title: 'Docs',
@@ -119,7 +118,7 @@ const config: Config = {
               to: '/docs/concepts',
             },
             {
-              label: 'STIX Objects Reference',
+              label: 'Reference',
               to: '/docs/objects',
             },
           ],
