@@ -29,6 +29,8 @@ const config: Config = {
     locales: ['en'],
   },
 
+  plugins: ['docusaurus-plugin-sass'],
+
   themes: [
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
